@@ -1,0 +1,41 @@
+{
+  "name": "@mypandora/chat",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/chat.umd.cjs",
+  "module": "./dist/chat.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./dist/chat.js",
+    "require": "./dist/chat.umd.cjs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "9.x",
+    "globals": "^15.6.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "postcss": "^8.4.38",
+    "prettier": "3.3.2",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.0.10"
+  },
+  "volta": {
+    "node": "20.12.2"
+  }
+}
